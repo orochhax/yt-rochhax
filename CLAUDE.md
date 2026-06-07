@@ -31,6 +31,17 @@ produzir mais**.
 - **Promessa clara no início + prova** (números, demonstração de tela).
 - Sem enrolação nos primeiros segundos.
 
+## 🎯 Posicionamento / diferencial (definido em 2026-06-07 após análise de 7 concorrentes)
+> Detalhe completo em `concorrentes/_padroes.md` (seção SÍNTESE GERAL).
+
+**Nosso espaço em branco:** **Dinheiro/resultado com o CLAUDE, de graça ou por centavos, em linguagem de "pessoa normal", com prova real.**
+- Bruno Gabarra e Maestros falam de ganho, mas são técnicos/avançados.
+- Tiago Lemos tem o ângulo de custo (grátis/centavos), mas não foca Claude.
+- Fernanda Kipper mostra que enquadramento técnico/dev tem teto baixo (10–25k) vs dinheiro (100–300k).
+- **Ninguém junta tudo** → esse é o nosso território.
+
+**A fórmula de título (sempre aplicar):** `[número quebrado/valor] + [CLAUDE nomeado, não "IA"] + [resultado concreto] + [prova em 1ª pessoa, já feita] + [enquadramento iniciante]`.
+
 ## Metas
 - Monetizar o canal (prioridade: retenção em vídeos de 10–15 min).
 - _[preencher: meta de inscritos, views/mês, frequência de upload]_
@@ -52,8 +63,11 @@ produzir mais**.
 - **Analisar resultados:** eu colo métricas → você analisa em `resultados/metricas.md` e ajusta os padrões.
 
 ## Regras de título do canal (resumo — detalhe em `_padroes.md`)
-- Número **específico e "quebrado"** quando der (R$31.096,42 > "muito dinheiro")
+- **NOMEIE o "CLAUDE"**, nunca só "IA" (A/B real: "O CLAUDE" 188k > genérico) ⭐ a regra nº1
+- Número **específico e "quebrado"** quando der (R$31.096,42 > "muito dinheiro"; nunca redondo tipo "R$5.000")
+- **Prova FEITA em 1ª pessoa** ("CRIEI", "TESTEI") — passado vende mais que "como eu faria"
+- **Enquadramento iniciante** ("pessoas normais", "sem código", "para iniciantes")
 - Gancho de **curiosidade** OU **ganho claro**
-- **Prova em 1ª pessoa** ("USEI", "EU")
-- **Sub-hook entre parênteses** "(comece do zero)"
+- **Sub-hook entre parênteses** "(comece do zero)", "(de graça)", "(sem código)"
 - **CAPS** só nas palavras-chave
+- ⛔ **Evite os anti-padrões** (ver `_padroes.md`): "IA" genérico, número redondo, promessa hipotética, tom técnico demais
