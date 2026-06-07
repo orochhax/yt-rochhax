@@ -20,6 +20,7 @@ concorrentes → padrões → ideias → roteiro → publicar → resultados
 | [`ideias/validadas.md`](ideias/validadas.md) | Fila do que vai virar roteiro |
 | [`videos/_template-roteiro.md`](videos/_template-roteiro.md) | Modelo de roteiro de 10–15 min focado em retenção |
 | [`resultados/metricas.md`](resultados/metricas.md) | Acompanhamento de CTR, retenção e views |
+| [`captacao/`](captacao/) | Página de captura de leads (nome+email+zap) → planilha → entrega no WhatsApp |
 
 ## 🎯 Sobre o canal
 - **Nicho:** Tecnologia e IA, com foco no ecossistema Claude/Anthropic e em ganhar dinheiro/produtividade com IA

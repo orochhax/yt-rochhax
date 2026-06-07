@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receba seu material gratuito</title>
+  <meta name="description" content="Cadastre-se e receba o material direto no seu WhatsApp." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+
+    <!-- ===== Formulário ===== -->
+    <section id="form-view">
+      <span class="logo" id="logo">SEU CANAL</span>
+      <span class="badge-gratis">100% Gratuito</span>
+
+      <h1>Receba o <span class="destaque" id="nome-produto">material</span> no seu WhatsApp</h1>
+      <p class="subtitulo">Preencha abaixo e te enviamos o acesso na hora, direto no zap.</p>
+
+      <ul class="beneficios">
+        <li>Entrega direto no seu WhatsApp</li>
+        <li>Sem custo e sem pegadinha</li>
+        <li>Bônus e novidades do canal em primeira mão</li>
+      </ul>
+
+      <form id="lead-form" novalidate>
+        <div class="campo">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como você se chama?" autocomplete="name" required />
+        </div>
+
+        <div class="campo">
+          <label for="email">Seu melhor e-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" required />
+        </div>
+
+        <div class="campo">
+          <label for="whatsapp">WhatsApp (com DDD)</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 91234-5678" autocomplete="tel" required />
+        </div>
+
+        <label class="consentimento">
+          <input type="checkbox" id="consentimento" required />
+          <span>Concordo em receber o material e comunicações por e-mail e WhatsApp, conforme a
+            <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
+        </label>
+
+        <div class="erro" id="erro" role="alert"></div>
+
+        <button type="submit" id="btn-enviar">Quero receber agora →</button>
+        <p class="rodape-form">🔒 Seus dados estão seguros. Sem spam.</p>
+      </form>
+    </section>
+
+    <!-- ===== Sucesso ===== -->
+    <section id="sucesso-view" class="sucesso">
+      <div class="check">✅</div>
+      <h2>Quase lá!</h2>
+      <p>Vamos te chamar no WhatsApp. Se não abrir sozinho, é só clicar no botão:</p>
+      <a href="#" class="btn-zap" id="btn-zap">💬 Abrir o WhatsApp</a>
+    </section>
+
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
