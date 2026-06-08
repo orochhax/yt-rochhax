@@ -16,9 +16,13 @@ concorrentes → padrões → ideias → roteiro → publicar → resultados
 | [`CLAUDE.md`](CLAUDE.md) | A "constituição" do canal: nicho, público, tom, metas |
 | [`concorrentes/_padroes.md`](concorrentes/_padroes.md) | O que funciona (títulos, thumbs, ganchos) — atualizado a cada análise |
 | [`concorrentes/analises/`](concorrentes/analises/) | Uma análise por vídeo de concorrente |
-| [`ideias/backlog.md`](ideias/backlog.md) | Banco de ideias ranqueadas |
+| [`concorrentes/shorts/_padroes-shorts.md`](concorrentes/shorts/_padroes-shorts.md) | Padrões específicos de **Shorts** (mecânica diferente do longo) |
+| [`concorrentes/shorts/analises/`](concorrentes/shorts/analises/) | Análise dos Shorts de cada canal |
+| [`ideias/backlog.md`](ideias/backlog.md) | Banco de ideias ranqueadas (vídeo longo) |
+| [`ideias/shorts.md`](ideias/shorts.md) | Banco de ideias de **Shorts** (formato curiosidade/utilidade) |
 | [`ideias/validadas.md`](ideias/validadas.md) | Fila do que vai virar roteiro |
 | [`videos/_template-roteiro.md`](videos/_template-roteiro.md) | Modelo de roteiro de 10–15 min focado em retenção |
+| [`videos/_template-roteiro-short.md`](videos/_template-roteiro-short.md) | Modelo de roteiro de **Short** (gancho 1–2s, loop, CTA) |
 | [`resultados/metricas.md`](resultados/metricas.md) | Acompanhamento de CTR, retenção e views |
 | [`captacao/`](captacao/) | Página de captura de leads (nome+email+zap) → planilha → entrega no WhatsApp |
 
