@@ -7,61 +7,110 @@
   <meta name="description" content="Cadastre-se e receba o material direto no seu WhatsApp." />
   <meta name="robots" content="noindex" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="card">
+  <main class="wrap">
 
-    <!-- ===== Formulário ===== -->
-    <section id="form-view">
-      <span class="logo" id="logo">SEU CANAL</span>
-      <span class="badge-gratis">100% Gratuito</span>
+    <!-- ===== HERO (form) ===== -->
+    <section id="form-view" class="hero">
 
-      <h1>Receba o <span class="destaque" id="nome-produto">material</span> no seu WhatsApp</h1>
-      <p class="subtitulo">Preencha abaixo e te enviamos o acesso na hora, direto no zap.</p>
-
-      <ul class="beneficios">
-        <li>Entrega direto no seu WhatsApp</li>
-        <li>Sem custo e sem pegadinha</li>
-        <li>Bônus e novidades do canal em primeira mão</li>
-      </ul>
-
-      <form id="lead-form" novalidate>
-        <div class="campo">
-          <label for="nome">Seu nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Como você se chama?" autocomplete="name" required />
+      <!-- Coluna esquerda: proposta de valor (estilo "info") -->
+      <aside class="info">
+        <!-- Perfil (troque o SVG por <img src="sua-foto.jpg" alt="Carlos Rocha" />) -->
+        <div class="perfil">
+          <div class="perfil-foto">
+            <img src="foto-perfil.jpg" alt="Carlos Rocha" />
+          </div>
+          <div class="perfil-txt">
+            <span class="perfil-nome">Carlos Rocha</span>
+            <span class="perfil-handle">@rochhax</span>
+          </div>
         </div>
+        <p class="perfil-bio">Engenheiro de software e pós-graduado em Cloud Computing. Te mostro IA e automação de um jeito simples — pra você produzir mais e ganhar dinheiro.</p>
 
-        <div class="campo">
-          <label for="email">Seu melhor e-mail</label>
-          <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" required />
+        <span class="info-tag">Material gratuito</span>
+
+        <ul class="info-itens">
+          <li class="info-item">
+            <span class="info-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 5 3 12l7 2 2 7 9-16Z"/><path d="m10 14 5-5"/></svg>
+            </span>
+            <div>
+              <span class="info-rotulo">Entrega</span>
+              <p>Direto no seu WhatsApp, na hora</p>
+            </div>
+          </li>
+          <li class="info-item">
+            <span class="info-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            </span>
+            <div>
+              <span class="info-rotulo">Custo</span>
+              <p>100% grátis, sem pegadinha</p>
+            </div>
+          </li>
+          <li class="info-item">
+            <span class="info-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2zM12 22V7M12 7S9 3 6.5 4.5 8 7 12 7Zm0 0s3-4 5.5-2.5S16 7 12 7Z"/></svg>
+            </span>
+            <div>
+              <span class="info-rotulo">Bônus</span>
+              <p>Conteúdos novos em primeira mão</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Redes (coloque seus links em href) -->
+        <div class="social">
+          <a class="social-btn" href="https://www.instagram.com/rochhax/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.youtube.com/@rochhax" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3V9Z" fill="currentColor" stroke="none"/></svg>
+          </a>
         </div>
+      </aside>
 
-        <div class="campo">
-          <label for="whatsapp">WhatsApp (com DDD)</label>
-          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 91234-5678" autocomplete="tel" required />
-        </div>
+      <!-- Coluna direita: cartão com formulário -->
+      <div class="card">
+        <h1>Receba o <span class="accent" id="nome-produto">material</span></h1>
+        <p class="sub">Preencha abaixo e te enviamos o acesso na hora, direto no WhatsApp.</p>
 
-        <label class="consentimento">
-          <input type="checkbox" id="consentimento" required />
-          <span>Concordo em receber o material e comunicações por e-mail e WhatsApp, conforme a
-            <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
-        </label>
+        <form id="lead-form" novalidate>
+          <div class="campo">
+            <input type="text" id="nome" name="nome" placeholder="Nome *" aria-label="Nome" autocomplete="name" required />
+          </div>
+          <div class="campo">
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp com DDD *" aria-label="WhatsApp" autocomplete="tel" required />
+          </div>
+          <div class="campo">
+            <input type="email" id="email" name="email" placeholder="E-mail *" aria-label="E-mail" autocomplete="email" required />
+          </div>
 
-        <div class="erro" id="erro" role="alert"></div>
+          <label class="consentimento">
+            <input type="checkbox" id="consentimento" required />
+            <span>Concordo em receber o material e comunicações por e-mail e WhatsApp, conforme a
+              <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
+          </label>
 
-        <button type="submit" id="btn-enviar">Quero receber agora →</button>
-        <p class="rodape-form">🔒 Seus dados estão seguros. Sem spam.</p>
-      </form>
+          <div class="erro" id="erro" role="alert"></div>
+
+          <button type="submit" id="btn-enviar">Quero receber agora →</button>
+          <p class="rodape-form">🔒 Seus dados estão seguros. Sem spam.</p>
+        </form>
+      </div>
     </section>
 
     <!-- ===== Sucesso ===== -->
     <section id="sucesso-view" class="sucesso">
-      <div class="check">✅</div>
-      <h2>Quase lá!</h2>
-      <p>Vamos te chamar no WhatsApp. Se não abrir sozinho, é só clicar no botão:</p>
-      <a href="#" class="btn-zap" id="btn-zap">💬 Abrir o WhatsApp</a>
+      <div class="card card-sucesso">
+        <div class="check">✅</div>
+        <h2>Quase lá!</h2>
+        <p>Vamos te chamar no WhatsApp. Se não abrir sozinho, é só clicar no botão:</p>
+        <a href="#" class="btn-zap" id="btn-zap">💬 Abrir o WhatsApp</a>
+      </div>
     </section>
 
   </main>
