@@ -195,10 +195,19 @@ button[type="submit"]:disabled { opacity: .6; cursor: progress; }
 
 /* ===== Responsivo ===== */
 @media (max-width: 760px) {
+  body { padding: 18px; }
   .hero { grid-template-columns: 1fr; gap: 22px; }
   .info { order: 2; padding: 0 4px; }
   .info-itens { gap: 18px; }
   .card { order: 1; padding: 34px 24px 28px; }
   .card h1 { font-size: 31px; }
   .sub { max-width: 100%; }
+  .doc { padding: 32px 22px; }
+}
+
+@media (max-width: 400px) {
+  body { padding: 14px; }
+  .card { padding: 28px 18px 24px; }
+  .card h1 { font-size: 26px; }
+  .perfil-bio { max-width: 100%; }
 }
